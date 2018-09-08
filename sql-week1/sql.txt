@@ -1,0 +1,79 @@
+FIRST PART
+1.Easy: Select all the customers from Brussels
+
+SELECT  * 
+FROM customers
+where customers.City = ‘Brussels'
+
+2. Easy: Select all the invoices of more than 10 euros
+
+SELECT  *
+FROM invoices
+where Total > 10
+
+3. Intermediate: Select all the tracks of the Rock genre ordered by track name
+
+SELECT name
+FROM genres
+WHERE name='Rock'
+ORDER BY name
+
+4. Intermediate: Select all the albums of R.E.M.
+
+SELECT * from albums WHERE Title LIKE '%R.E.M%' 
+
+
+(“190"	"The Best Of R.E.M.: The IRS Years"	“124")
+
+
+5. Very Hard: Select all the invoices of which an album of U2 was bought
+
+
+6. Very Hard: Select all the customers who bought for more than 10€ on one invoice
+
+SELECT Total FROM invoices
+WHERE Total>= 10;
+
+(64)
+
+
+SECOND PART 
+
+7. Easy: How many tracks are in the database?
+
+SELECT *
+from tracks
+
+(3503 tracks)
+
+8. Easy: Select all the different countries of the clients?
+
+SELECT Country
+from customers
+
+(59 countries)
+
+9. Intermediate: What is the total cost of the most expensive 
+
+SELECT MAX(Total) FROM invoices
+
+(25.86)
+
+
+
+
+10. Intermediate: What is the average total cost of an invoice?
+
+SELECT AVG(Total)
+FROM invoices;
+(5.65194174757282)
+
+11. Hard: How many tracks are in the database of the band Pearl Jam?
+
+SELECT COUNT(*)
+FROM tracks
+WHERE Composer = 'Pearl Jam’
+
+(2)
+
+12. Extremely hard: Select all the albums that have tracks of at least two different genres 
