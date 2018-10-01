@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=K2D");
+
+body {
+  font-family: "K2D", sans-serif;
+}
+nav {
+  background-color: black;
+}
+
+nav img {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+nav img {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(242, 242, 242, 0.851);
+  margin: 2rem;
+  padding: 0.3rem;
+  border-radius: 8px;
+  animation-name: movies;
+  animation-duration: 3s;
+}
+
+@keyframes movies {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+li img {
+  height: 5rem;
+  width: 5rem;
+}
+
+li {
+  list-style: none;
+  margin: 0.1rem;
+}
+
+li:nth-child(6) {
+  font-weight: bold;
+}
+
+.btn {
+  background: rgb(255, 230, 43);
+  color: black;
+  padding: 0.8rem;
+  margin-right: 74rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1403px) {
+  .btn {
+    margin-right: 44rem;
+  }
+}
+
+@media only screen and (max-width: 948px) {
+  .btn {
+    margin-right: 22rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .btn {
+    margin-right: 15rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .btn {
+    margin-right: 5rem;
+  }
+}
