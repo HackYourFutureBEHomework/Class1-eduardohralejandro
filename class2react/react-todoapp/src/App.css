@@ -1,0 +1,32 @@
+.checking {
+  text-decoration: line-through;
+}
+.todo-description {
+  color: blue;
+  display: flex;
+}
+
+.box {
+  margin-left: 35%;
+}
+
+input {
+  margin-left: 40%;
+  border-radius: 8px;
+  border: rgb(197, 226, 252) solid 1px;
+  padding: 0.5rem;
+}
+
+.title {
+  margin-left: 40%;
+}
+
+.alert {
+  color: rgb(255, 0, 0);
+  margin-left: 40%;
+}
+
+.loader {
+  color: blueviolet;
+  margin-left: 40%;
+}

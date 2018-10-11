@@ -77,3 +77,5 @@ WHERE Composer = 'Pearl Jam’
 (2)
 
 12. Extremely hard: Select all the albums that have tracks of at least two different genres 
+
+
